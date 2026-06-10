@@ -30,144 +30,171 @@
 
 ---
 
-## 📜 Descrição
+# 📜 Descrição
 
-A FarmTech Solutions é uma plataforma integrada de monitoramento agrícola desenvolvida durante o Projeto de Inteligência Artificial da FIAP.
+O projeto FarmTech Solutions foi desenvolvido durante o curso de Inteligência Artificial da FIAP com o objetivo de apoiar o monitoramento agrícola por meio da integração de tecnologias modernas de coleta, armazenamento, análise e visualização de dados.
 
-O objetivo do sistema é auxiliar produtores rurais na coleta, armazenamento, análise e monitoramento de informações da lavoura por meio da integração de diversas tecnologias estudadas ao longo das fases do projeto.
+A solução reúne em uma única plataforma funcionalidades desenvolvidas ao longo das fases do projeto, contemplando conceitos de Internet das Coisas (IoT), Banco de Dados, Machine Learning, Computação em Nuvem e Visão Computacional.
 
-Durante o desenvolvimento foram implementadas funcionalidades relacionadas à gestão agrícola, armazenamento de dados, análise de informações, visão computacional, dashboards interativas e serviços de computação em nuvem.
+A aplicação permite realizar o planejamento agrícola, registrar leituras de sensores simulados, armazenar informações em banco de dados, realizar análises preditivas de produtividade e executar análises visuais da lavoura.
 
-Na Fase 7 foi realizada a integração de todas as funcionalidades desenvolvidas anteriormente em uma única aplicação construída com Python e Streamlit. Além disso, foi implementado um serviço de mensageria utilizando Amazon SNS, permitindo o envio de alertas automáticos por e-mail aos responsáveis pela fazenda.
+Na Fase 7 foi realizada a integração completa de todas as funcionalidades em uma única dashboard desenvolvida com Python e Streamlit.
 
-Os alertas podem ser gerados a partir de leituras dos sensores IoT, análises visuais da lavoura ou registros manuais realizados pelo usuário. As mensagens enviadas apresentam recomendações de ações corretivas para auxiliar no manejo agrícola e na tomada de decisão.
+Além da integração dos módulos anteriores, foi implementado um serviço de mensageria utilizando Amazon SNS (Simple Notification Service), permitindo o envio automático de alertas por e-mail para os responsáveis pela fazenda.
 
-O sistema demonstra a aplicação prática de conceitos de Inteligência Artificial, Internet das Coisas (IoT), Computação em Nuvem, Banco de Dados, Machine Learning e Visão Computacional em um cenário agrícola.
+Os alertas podem ser gerados a partir de:
 
----
+* Leituras dos sensores IoT;
+* Resultados do modelo de Machine Learning;
+* Análises visuais da lavoura;
+* Alertas manuais cadastrados pelo usuário.
 
-## 📁 Estrutura de pastas
-
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
-
-* **dados**: arquivos utilizados pelo sistema para armazenamento de informações agrícolas.
-
-* **fase1_gestao_agricola**: estrutura referente às funcionalidades desenvolvidas na Fase 1.
-
-* **fase2_banco_dados**: estrutura referente às funcionalidades desenvolvidas na Fase 2.
-
-* **fase3_machine_learning**: estrutura referente às funcionalidades desenvolvidas na Fase 3.
-
-* **fase4_dashboard_base**: estrutura referente à dashboard inicial desenvolvida na Fase 4.
-
-* **fase5_aws_alertas**: estrutura relacionada à implementação dos serviços AWS.
-
-* **fase6_visao_computacional**: estrutura referente às funcionalidades de análise visual da lavoura.
-
-* **.streamlit**: arquivos de configuração da aplicação Streamlit.
-
-* **app.py**: arquivo principal contendo a integração de todas as fases do projeto.
-
-* **requirements.txt**: lista de dependências necessárias para execução.
-
-* **README.md**: documentação principal do projeto.
+As mensagens enviadas apresentam recomendações de ações corretivas para auxiliar no manejo agrícola e apoiar a tomada de decisões.
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+# 📷 Dashboard Integrada
 
-### Fase 1 – Gestão Agrícola
+A figura abaixo apresenta a dashboard final da FarmTech Solutions contendo a integração das funcionalidades desenvolvidas nas Fases 1, 2, 3, 4, 5 e 6.
 
-* Cadastro de informações agrícolas.
-* Monitoramento dos setores da fazenda.
-* Controle de indicadores do cultivo.
-
-### Fase 2 – Banco de Dados
-
-* Registro das leituras dos sensores.
-* Armazenamento dos dados coletados.
-* Consulta das informações cadastradas.
-
-### Fase 3 – Machine Learning
-
-* Processamento dos dados agrícolas.
-* Apoio à tomada de decisão.
-
-### Fase 4 – Dashboard
-
-* Interface gráfica desenvolvida com Streamlit.
-* Visualização integrada dos dados.
-
-### Fase 5 – AWS
-
-* Configuração do Amazon SNS.
-* Criação de tópicos e assinaturas.
-* Integração com Python utilizando boto3.
-
-### Fase 6 – Visão Computacional
-
-* Análise visual da lavoura.
-* Classificação dos níveis de cobertura vegetal.
-
-### Fase 7 – Integração Final
-
-* Integração das Fases 1, 2, 3, 4, 5 e 6.
-* Dashboard única para gerenciamento da fazenda.
-* Sistema de alertas automáticos por e-mail utilizando AWS SNS.
+[INSERIR PRINT DA DASHBOARD GERAL]
 
 ---
 
-## ☁️ Serviço de Alertas AWS
+# ☁️ Serviço de Alertas AWS SNS
 
-Foi implementado um serviço de mensageria utilizando Amazon SNS.
+Durante a Fase 7 foi implementado um serviço de mensageria em nuvem utilizando Amazon SNS.
 
-O sistema permite gerar alertas a partir de:
+O objetivo do serviço é notificar automaticamente os responsáveis pela fazenda quando forem identificadas situações que exijam atenção, como:
 
-* Leituras dos sensores IoT.
-* Resultados da análise visual da lavoura.
-* Alertas cadastrados manualmente.
+* Necessidade de irrigação;
+* Alterações de pH;
+* Problemas identificados pela visão computacional;
+* Alertas manuais definidos pelo usuário.
 
-Os alertas são enviados por e-mail aos responsáveis pela fazenda contendo recomendações de ações corretivas para auxiliar no manejo agrícola.
+O fluxo de funcionamento é:
 
-### Evidências da Solução
-
-Inserir nesta seção:
-
-* Print da dashboard principal.
-* Print da criação do tópico SNS.
-* Print da assinatura confirmada.
-* Print do alerta enviado com sucesso.
-* Print do e-mail recebido.
+1. A dashboard gera o alerta;
+2. A aplicação envia a mensagem para o Amazon SNS;
+3. O SNS encaminha a mensagem para os assinantes cadastrados;
+4. O responsável recebe o alerta por e-mail.
 
 ---
 
-## 🔧 Como executar o código
+## Criação do tópico SNS
 
-### Pré-requisitos
+Foi criado o tópico SNS denominado:
+
+**farmtech-alertas**
+
+Responsável por centralizar o envio de notificações da plataforma.
+
+[INSERIR PRINT DO TÓPICO SNS]
+
+---
+
+## Assinatura confirmada
+
+Foi criada uma assinatura utilizando protocolo EMAIL para recebimento das notificações.
+
+[INSERIR PRINT DA ASSINATURA CONFIRMADA]
+
+---
+
+## Envio de alerta pela aplicação
+
+A dashboard permite o envio de alertas diretamente pela interface integrada.
+
+[INSERIR PRINT DO STREAMLIT COM ALERTA ENVIADO]
+
+---
+
+## Recebimento do alerta
+
+Após o envio, o responsável recebe automaticamente a mensagem contendo as informações e recomendações geradas pelo sistema.
+
+[INSERIR PRINT DO E-MAIL RECEBIDO]
+
+---
+
+# 📁 Estrutura de Pastas
+
+O projeto está organizado da seguinte forma:
+
+```text
+FASE7_FARMTECH_SOLUTIONS
+│
+├── .streamlit
+│   └── secrets.toml
+│
+├── dados
+│
+├── fase1_gestao_agricola
+│
+├── fase2_banco_dados
+│
+├── fase3_machine_learning
+│
+├── fase4_dashboard_base
+│
+├── fase5_aws_alertas
+│
+├── fase6_visao_computacional
+│
+├── app.py
+│
+├── requirements.txt
+│
+└── README.md
+```
+
+Descrição das pastas:
+
+* **dados**: armazenamento de informações utilizadas pelo sistema.
+* **fase1_gestao_agricola**: funcionalidades relacionadas ao planejamento agrícola.
+* **fase2_banco_dados**: armazenamento e consulta de dados agrícolas.
+* **fase3_machine_learning**: modelos de previsão e análise de produtividade.
+* **fase4_dashboard_base**: dashboard utilizada como base da integração.
+* **fase5_aws_alertas**: serviços de computação em nuvem e mensageria AWS.
+* **fase6_visao_computacional**: análise visual da lavoura.
+* **app.py**: aplicação principal integrada da Fase 7.
+
+---
+
+# 🔧 Como executar o projeto
+
+## Pré-requisitos
 
 * Python 3.11 ou superior
 * Visual Studio Code
-* Conta AWS Academy Learner Lab
-* Bibliotecas listadas em requirements.txt
+* Conta AWS Academy
+* Amazon SNS configurado
+* Streamlit
 
-### Instalação
+## Instalação
 
 Clone o repositório:
 
 ```bash
-git clone LINK_DO_REPOSITORIO
+git clone [LINK_DO_REPOSITORIO]
 ```
 
-Acesse a pasta do projeto:
+Entre na pasta:
 
 ```bash
-cd FASE7_FARMTECH_SOLUTIONS
+cd fase7_farmtech_solutions
 ```
 
 Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Configure as credenciais AWS em:
+
+```text
+.streamlit/secrets.toml
 ```
 
 Execute a aplicação:
@@ -178,45 +205,55 @@ streamlit run app.py
 
 ---
 
-## 🎥 Vídeo Demonstrativo
+# 🎥 Vídeo de demonstração
 
-Link do vídeo no YouTube (Não Listado):
+Link do vídeo:
 
-INSERIR_LINK_DO_VIDEO
+[COLE_AQUI_O_LINK_DO_YOUTUBE]
+
+O vídeo apresenta:
+
+* Fase 1 – Gestão Agrícola;
+* Fase 2 – Banco de Dados;
+* Fase 3 – Machine Learning;
+* Fase 4 – Dashboard;
+* Fase 5 – AWS SNS;
+* Fase 6 – Visão Computacional;
+* Integração final da Fase 7.
 
 ---
 
-## 🗃 Histórico de lançamentos
+# 🗃 Histórico de lançamentos
 
-* 0.7.0 - Junho/2026
+## 0.7.0 – Fase 7
 
-  * Integração completa das fases.
-  * Implementação do serviço AWS SNS.
-  * Dashboard final do projeto.
+* Integração completa das fases.
+* Implementação do serviço AWS SNS.
+* Dashboard final unificada.
 
-* 0.6.0
+## 0.6.0 – Fase 6
 
-  * Implementação da visão computacional.
+* Implementação de visão computacional.
 
-* 0.5.0
+## 0.5.0 – Fase 5
 
-  * Implementação dos serviços AWS.
+* Configuração da infraestrutura AWS.
 
-* 0.4.0
+## 0.4.0 – Fase 4
 
-  * Desenvolvimento da dashboard.
+* Desenvolvimento da dashboard.
 
-* 0.3.0
+## 0.3.0 – Fase 3
 
-  * Implementação dos modelos de análise.
+* Modelos de Machine Learning.
 
-* 0.2.0
+## 0.2.0 – Fase 2
 
-  * Estruturação do banco de dados.
+* Banco de Dados.
 
-* 0.1.0
+## 0.1.0 – Fase 1
 
-  * Desenvolvimento da gestão agrícola.
+* Planejamento e gestão agrícola.
 
 ---
 
