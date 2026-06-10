@@ -57,7 +57,9 @@ As mensagens enviadas apresentam recomendações de ações corretivas para auxi
 
 A figura abaixo apresenta a dashboard final da FarmTech Solutions contendo a integração das funcionalidades desenvolvidas nas Fases 1, 2, 3, 4, 5 e 6.
 
-[INSERIR PRINT DA DASHBOARD GERAL]
+<p align="center">
+<img src="imag1.png" width="90%">
+</p>
 
 ---
 
@@ -89,7 +91,9 @@ Foi criado o tópico SNS denominado:
 
 Responsável por centralizar o envio de notificações da plataforma.
 
-[INSERIR PRINT DO TÓPICO SNS]
+<p align="center">
+<img src="imag2.png" width="90%">
+</p>
 
 ---
 
@@ -97,7 +101,9 @@ Responsável por centralizar o envio de notificações da plataforma.
 
 Foi criada uma assinatura utilizando protocolo EMAIL para recebimento das notificações.
 
-[INSERIR PRINT DA ASSINATURA CONFIRMADA]
+<p align="center">
+<img src="imag3.png" width="90%">
+</p>
 
 ---
 
@@ -105,7 +111,9 @@ Foi criada uma assinatura utilizando protocolo EMAIL para recebimento das notifi
 
 A dashboard permite o envio de alertas diretamente pela interface integrada.
 
-[INSERIR PRINT DO STREAMLIT COM ALERTA ENVIADO]
+<p align="center">
+<img src="imag4.png" width="90%">
+</p>
 
 ---
 
@@ -113,7 +121,9 @@ A dashboard permite o envio de alertas diretamente pela interface integrada.
 
 Após o envio, o responsável recebe automaticamente a mensagem contendo as informações e recomendações geradas pelo sistema.
 
-[INSERIR PRINT DO E-MAIL RECEBIDO]
+<p align="center">
+<img src="imag6.png" width="90%">
+</p>
 
 ---
 
