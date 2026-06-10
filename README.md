@@ -138,36 +138,67 @@ FASE7_FARMTECH_SOLUTIONS
 │   └── secrets.toml
 │
 ├── dados
+│   └── README.md
 │
 ├── fase1_gestao_agricola
+│   └── README.md
 │
 ├── fase2_banco_dados
+│   └── README.md
 │
 ├── fase3_machine_learning
+│   └── README.md
 │
 ├── fase4_dashboard_base
+│   └── README.md
 │
 ├── fase5_aws_alertas
+│   └── README.md
 │
 ├── fase6_visao_computacional
+│   └── README.md
 │
 ├── app.py
-│
 ├── requirements.txt
-│
-└── README.md
+├── README.md
+├── .gitignore
+├── logo-fiap.png
+├── imag1.png
+├── imag2.png
+├── imag3.png
+├── imag4.png
+├── imag6.png
 ```
 
-Descrição das pastas:
+Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-* **dados**: armazenamento de informações utilizadas pelo sistema.
-* **fase1_gestao_agricola**: funcionalidades relacionadas ao planejamento agrícola.
-* **fase2_banco_dados**: armazenamento e consulta de dados agrícolas.
-* **fase3_machine_learning**: modelos de previsão e análise de produtividade.
-* **fase4_dashboard_base**: dashboard utilizada como base da integração.
-* **fase5_aws_alertas**: serviços de computação em nuvem e mensageria AWS.
-* **fase6_visao_computacional**: análise visual da lavoura.
-* **app.py**: aplicação principal integrada da Fase 7.
+- **.streamlit**: contém os arquivos de configuração da aplicação Streamlit, incluindo as credenciais utilizadas para integração com os serviços AWS.
+
+- **dados**: pasta destinada ao armazenamento e organização dos dados utilizados pelo sistema ao longo das fases do projeto.
+
+- **fase1_gestao_agricola**: estrutura referente às funcionalidades desenvolvidas na Fase 1, relacionadas ao planejamento e gestão agrícola.
+
+- **fase2_banco_dados**: estrutura referente às funcionalidades da Fase 2, envolvendo armazenamento e consulta de dados agrícolas.
+
+- **fase3_machine_learning**: estrutura referente às funcionalidades da Fase 3, responsáveis pelas análises preditivas e modelos de Machine Learning.
+
+- **fase4_dashboard_base**: estrutura referente à dashboard inicial desenvolvida na Fase 4, utilizada como base para integração das demais funcionalidades.
+
+- **fase5_aws_alertas**: estrutura relacionada à implementação dos serviços AWS, incluindo a configuração do Amazon SNS para envio de alertas.
+
+- **fase6_visao_computacional**: estrutura referente às funcionalidades de visão computacional utilizadas para análise visual da lavoura.
+
+- **app.py**: arquivo principal da aplicação, responsável pela integração de todas as funcionalidades desenvolvidas nas Fases 1, 2, 3, 4, 5 e 6.
+
+- **requirements.txt**: contém as bibliotecas necessárias para execução do projeto.
+
+- **README.md**: documentação principal do projeto, contendo informações sobre funcionamento, execução, integrações realizadas e evidências da solução.
+
+- **.gitignore**: arquivo responsável por definir quais arquivos e configurações não devem ser enviados ao repositório GitHub, como credenciais e arquivos temporários.
+
+- **logo-fiap.png**: imagem utilizada na identificação visual do projeto dentro da documentação.
+
+- **imag1.png, imag2.png, imag3.png, imag4.png e imag6.png**: evidências visuais utilizadas para documentar a dashboard integrada, a infraestrutura AWS SNS, o envio dos alertas e o recebimento das notificações por e-mail.
 
 ---
 
