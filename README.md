@@ -250,7 +250,7 @@ streamlit run app.py
 
 Link do vídeo:
 
-[▶️ Clique aqui para assistir ao vídeo](hhttps://youtu.be/Ao3lU2cmV4M)
+🔗 [Assistir demonstração completa do projeto](https://youtu.be/Ao3lU2cmV4M?si=OUu9y-5A27hBVah4)
 
 O vídeo apresenta:
 
